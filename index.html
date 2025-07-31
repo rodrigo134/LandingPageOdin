@@ -5,9 +5,189 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        a {
+            color: white;
+        }
+
+        .section-header {
+            display: flex;
+            background-color: #1F2937;
+            padding: 20px 10%;
+            color: white;
+
+        }
+
+        .menu {
+            display: flex;
+            margin-left: auto;
+            gap: 10px;
+        }
+
+
+
+        .section-main {
+            background-color: #1F2937;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 80px 10%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .placeholder-img {
+            width: 400px;
+            height: 200px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: grey;
+            display: flex;
+        }
+
+
+        .text-hero {
+            max-width: 500px;
+            color: aliceblue;
+        }
+
+        .section-content {
+            background-color: rgb(246, 245, 243);
+            display: block;
+            text-align: center;
+            padding: 60px 10%;
+
+        }
+
+        h2 {
+            font-size: 22px;
+        }
+
+        .container-flex {
+            display: flex;
+            padding: 40px 10%;
+            text-align: center;
+            flex-direction: column;
+
+        }
+
+        .wrapper {
+            display: flex;
+            gap: 20px;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            height: 400px;
+            align-items: center;
+        }
+
+        .item-flex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+
+        }
+
+        .item {
+            height: 120px;
+            width: 120px;
+            background-color: rgb(101, 101, 176);
+            border: solid 2px;
+        }
+
+        .cit {
+            background-color: rgb(210, 195, 195);
+            text-align: center;
+            padding: 120px 15%;
+            height: 400px;
+        }
+
+        .cit h2 {
+            font-size: 38px;
+        }
+
+        footer {
+            background-color: #1F2937;
+            text-align: center;
+            color: #eee;
+            padding: 20px 20px;
+            border-top: 1px solid #444;
+            /* Espaçamento interno */
+
+        }
+    </style>
 </head>
 
 <body>
+    <header class="section-header">
+        <div class="text-logo">logo text</div>
+        <nav class="menu">
+            <a href="">Link1</a>
+            <a href="">Link 2</a>
+            <a href="">Link 3</a>
+        </nav>
+    </header>
+    <section class="section-main">
+        <div class="text-hero">
+            <h1>This website is awesome</h1>
+            <p>This website has some subtext that goes here under the main title. It’s a smaller font and the color is
+                lower contrast.</p>
+            <button>Sign Up</button>
+
+        </div>
+        <div class="placeholder-img">
+            this is a place holder for image
+
+        </div>
+
+    </section>
+
+
+    <!--Seção branca-->
+    <section class="section-content">
+        <h2>Some random Information</h2>
+
+        <div class="wrapper">
+            <div class="item-flex">
+                <div class="item"></div>
+                <p>Legenda</p>
+
+            </div>
+            <div class="item-flex">
+                <div class="item"></div>
+                <p>Legenda</p>
+            </div>
+            <div class="item-flex">
+                <div class="item"></div>
+                <p>Legenda</p>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="cit">
+        <div>
+            <h2>This is an inspiring quote, or a testimonial from a
+                customer. Maybe it's just filling up space,or
+                maybe people will actually read it. Who knows?All I know is that it looks nice.
+
+            </h2>
+
+        </div>
+
+    </section>
+    <footer>
+        <p>Copyright The Odin Project</p>
+    </footer>
 
 </body>
 
